@@ -1,6 +1,7 @@
 <h1><%= @task[:title] %></h1>
+<hr>
 
 <p><%= @task[:details] %></p>
 
-<%= link_to "Edit this task", edit_path %>
-<%= link_to "Back to list", tasks_path %>
+<%= link_to "Edit this task", edit_path, class: "btn btn-sm btn-primary" %>
+<%= link_to "Back to list", tasks_path, class: "btn btn-sm btn-primary" %>

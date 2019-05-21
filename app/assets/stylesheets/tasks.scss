@@ -5,3 +5,33 @@
 body {
   background-color: white;
 }
+
+p {
+  font-size: 16px
+}
+
+.container {
+  // background-color: #eeeeee;
+  text-align: center;
+}
+
+.card {
+  width: 160px;
+  text-align: left;
+  margin: 8px auto;
+  padding: 10px;
+}
+
+.btn {
+  width: 160px;
+  font-size: 16px;
+}
+
+.form-container {
+  margin: 80px;
+}
+
+.tasks {
+  display: flex;
+  justify-content: space-between;
+}

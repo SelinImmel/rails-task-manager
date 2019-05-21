@@ -1,9 +1,9 @@
 <h1>My tasks</h1>
-<p>This is the tasks view</p>
+<hr>
 
-<ul>
+<div class="card">
   <% @tasks.each do |task| %>
-    <li>
+    <p class="tasks justify-content-between">
       <%= check_box("completed", task.id, {checked: task.completed}) %>
       <%= link_to task[:title], task_path(task) %>
 
@@ -11,8 +11,9 @@
           <i class="fas fa-trash"></i>
           <!-- insert whatever you want -->
       <% end %>
-    </li>
+    </p>
   <% end %>
-</ul>
+</div>
 
-<%= link_to "Create a task", new_path %>
+
+<%= link_to "Create a task", new_path, class: "btn btn-sm btn-primary" %>
