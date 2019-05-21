@@ -1,0 +1,8 @@
+<h1>My tasks</h1>
+<p>This is the tasks view</p>
+
+<ul>
+  <% @tasks.each do |task| %>
+    <li><%= task[:title] %></li>
+  <% end %>
+</ul>
